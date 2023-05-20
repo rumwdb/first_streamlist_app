@@ -1,1 +1,3 @@
-print('Om Namashivaya')
+import streamlit
+
+streamlit.title("Om Namashivaya")
