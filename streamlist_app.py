@@ -1,3 +1,3 @@
 import streamlit
 
-streamlit.title("Om Namashivaya")
+streamlit.title("My Parents New HEalthy Dinner")
