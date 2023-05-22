@@ -63,5 +63,5 @@ streamlit.write('thanks for adding',add_my_fruit)
 
 def insert_row_sf(fruit):
     with my_cnx.cursor() as my_cur_i:
-        my_cur_i.execute("insert into pc_rivery_db.public.fruit_load_list values('" + ??? + "')")
+        my_cur_i.execute("insert into pc_rivery_db.public.fruit_load_list values('" + ???? + "')")
         return 'Thanks for addding' + fruit
