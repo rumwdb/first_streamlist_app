@@ -61,5 +61,7 @@ streamlit.dataframe(my_data_rows)
 add_my_fruit = streamlit.text_input('What fruit would you like add?')
 streamlit.write('thanks for adding',add_my_fruit)                                 
 
-my_cur_i = my_cnx.cursor()
-my_cur_i.execute("insert into pc_rivery_db.public.fruit_load_list values('" + ??? + "')", add_my_fruit)
+def insert_row_sf(fruit):
+    with my_cnx.cursor() as my_cur_i:
+        my_cur_i.execute("insert into pc_rivery_db.public.fruit_load_list values('" + ??? + "')")
+        return 'Thanks for addding' + fruit
